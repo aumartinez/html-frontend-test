@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  line-height: 14px;
+  line-height: 1.6;
   font-size: 18px;
   color: #554d56;
   overflow-x: hidden;
@@ -54,6 +54,22 @@ body {
   padding-left: 15px;
 }
 
+.btn {
+  text-decoration: none;
+  color: inherit;  
+}
+
+button.btn {
+  background-color: transparent;
+  color: inherit;
+  border: 0;
+  font-size: inherit;
+}
+
+form fieldset {
+  border: 0;
+}
+
 /* Typography */
 
 h1,
@@ -70,10 +86,81 @@ ul {
   list-style: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* Branding */
+
+.brand-logo {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Spacers */
+
+.sec-padding {
+  padding-top: 30px;
+}
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Header */
 
-header {
-  height: 740px;
+header {  
+  min-height: 100vh;
+}
+
+.bg-hero {
+  background-image: url("../img/bg-hero.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100vh;
+}
+
+.btn-login {
+  color: #fff;
+  margin-right: 30px;
+}
+
+.btn-signup {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.hero-title {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-sub {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
 }
 
 /* Mobile only */
