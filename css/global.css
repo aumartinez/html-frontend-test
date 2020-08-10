@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -15,18 +21,78 @@ body {
   line-height: 14px;
   font-size: 18px;
   color: #554d56;
+  overflow-x: hidden;
+}
+
+/* Helpers */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12,
+.col-4,
+.col-3,
+.col-md-6,
+.col-lg-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header */
+
+header {
+  height: 740px;
 }
 
 /* Mobile only */
 
 @media (max-width: 767px) {
-  
+  /* Helpers */
+  .hidden-xs {
+    display: none;
+  }
 }
 
 /* Tablet to desktop */
 
 @media (min-width: 768px) {
+  /* Helpers */
   
+  .visible-xs {
+    display: none;
+  }
 }
 
 /* Desktop */
