@@ -100,6 +100,23 @@ ul {
   font-size: 24px;
 }
 
+.btn-primary {
+  background-color: #FF4E50;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  opacity: 0.7;
+}
+
+.btn-long {
+  width: 100%;
+  display: inline-block;
+}
+
 /* Spacers */
 
 .sec-padding {
