@@ -483,6 +483,59 @@ footer .design-logo {
   .visible-xs {
     display: none;
   }
+  
+  .sec-padding {
+    padding-top: 45px;
+  }
+  
+  .btn-long {
+    width: auto;
+  }
+  
+  .col-4 {
+    -ms-flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  /* Header */
+  
+  header .brand {
+    float: left;
+  }
+  
+  header .btn-wrapper {
+    float: right;
+  }
+  
+  /* Midd tags */
+  
+  .mid-tags {
+    height: 400px;
+  }
+  
+  /* Midd cards */
+  
+  .mid-card {
+    width: 75%;
+  }
+
+  .md-right .mid-card {
+    float: right;
+  }
+
+  .mid-card p {
+    font-size: 16px;
+  }  
+  
 }
 
 /* Desktop */
