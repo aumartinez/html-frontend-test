@@ -1,9 +1,8 @@
 "use strict";
-
-var rotate;
-var loader = function(rotate) {
+var loader = function() {
   var div = document.createElement("div");
   
+  div.id = "loader";
   div.style.position = "fixed";
   div.style.backgroundColor = "rgba(0,0,0,0.7)";
   div.style.height = "100%";
@@ -35,7 +34,7 @@ var loader = function(rotate) {
   var deg = 0;
   var inc = 5;
   
-  rotate = setInterval(
+  var rotate = setInterval(
     function(){
       spin.style.transform = "rotate(" + deg + "deg)";
       deg += inc;      
@@ -46,8 +45,7 @@ var loader = function(rotate) {
 };
 
 function stopLoader() {
-  clearInterval(loader(rotate));
-  var div = document.getElementsByTagName("div")[0];
+  var div = document.getElementById("loader");
   div.parentNode.removeChild(div);
 }
 
