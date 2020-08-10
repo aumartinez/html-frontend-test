@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1em;
   font-size: 18px;
   color: #554d56;
   overflow-x: hidden;
@@ -77,6 +77,14 @@ h2,
 h3,
 h4 {
   margin: 0;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold; 
+  margin: 1em 0;
+  line-height: 1.2em;  
 }
 
 ul {
@@ -139,7 +147,10 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh;
+}
+
+.sm-bottom {
+  margin-bottom: 15px;
 }
 
 /* Header */
@@ -153,14 +164,14 @@ header {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .overlay {
   position: absolute;
   background-color: rgba(0,0,0,0.2);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .btn-login {
@@ -183,6 +194,7 @@ header {
   font-weight: bold;
   font-size: 52px;
   line-height: 1em;
+  margin-bottom: 15px;
 }
 
 .hero-sub {
@@ -198,24 +210,66 @@ header {
 .sub-title {
   text-align: center;
   font-size: 22px;
-  font-weight: bold;  
+  font-weight: bold;
+  margin-bottom: 1.5em;
 }
 
 .mid-tags {
   overflow: hidden;
-  padding: 15px;
+  padding: 30px 15px;
   border-radius: 5px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  -webkit-box-orient: vertical;  
+  -webkit-box-direction: normal;  
+  -ms-flex-direction: column;  
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .mid-tags p {
   margin: 0;
 }
 
-.bg-step1 {
-  background-image: url("../img/bg-step1.png");
+.tag-wrapper {
+  position: relative;
+  margin-top: auto;
+}
+
+.grad-overlay {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 100%;
+  z-index: 0;
+  border-radius: 5px;
+  top: 0;
+  left: 15px;
+  
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0.5+70,1+100 */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(77,77,77,0.5) 70%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(77,77,77,0.5) 70%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.5) 0%,rgba(77,77,77,0.5) 70%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+.bg-step2,
+.bg-step1 {  
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.bg-step1 {
+  background-image: url("../img/bg-step1.png");
+}
+
+.bg-step2 {
+  background-image: url("../img/bg-step2.png");
 }
 
 /* Mobile only */
