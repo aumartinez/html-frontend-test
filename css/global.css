@@ -77,7 +77,6 @@ h2,
 h3,
 h4 {
   margin: 0;
-  line-height: auto;
 }
 
 ul {
@@ -103,9 +102,11 @@ ul {
 .btn-primary {
   background-color: #FF4E50;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 25px;
   font-weight: bold;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 .btn-primary:hover {
@@ -115,6 +116,14 @@ ul {
 .btn-long {
   width: 100%;
   display: inline-block;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  color: #fff;
 }
 
 /* Spacers */
@@ -172,12 +181,41 @@ header {
   color: #fff;
   text-align: center;
   font-weight: bold;
+  font-size: 52px;
+  line-height: 1em;
 }
 
 .hero-sub {
   text-align: center;
   color: #fff;
   font-weight: 300;
+  font-size: 24px;
+  line-height: 24.5px;
+}
+
+/* Mid Tags */
+
+.sub-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;  
+}
+
+.mid-tags {
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.mid-tags p {
+  margin: 0;
+}
+
+.bg-step1 {
+  background-image: url("../img/bg-step1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 /* Mobile only */
