@@ -46,6 +46,7 @@ body {
 .col-12,
 .col-4,
 .col-3,
+.col-8,
 .col-md-6,
 .col-lg-4 {
   position: relative;
@@ -112,6 +113,7 @@ ul {
   font-size: 24px;
 }
 
+button.btn-primary,
 .btn-primary {
   background-color: #FF4E50;
   color: #fff;
@@ -167,10 +169,15 @@ ul {
 .flex-column-center {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: flex;  
+  -webkit-box-orient: vertical;  
+  -webkit-box-direction: normal;  
+  -ms-flex-direction: column;  
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;  
+  min-height: 450px;
 }
 
 .sm-bottom {
@@ -181,6 +188,10 @@ ul {
 
 header {  
   min-height: 100vh;
+}
+
+.hero-tag {
+  margin-top: auto;
 }
 
 .bg-hero {
@@ -318,10 +329,11 @@ header {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  height: 140px;  
 }
 
 .overlay-card {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.3);
   position: absolute;
   top: 0;
   right: 0;
@@ -330,6 +342,128 @@ header {
   width: calc(100% - 30px);
   height: 100%;
   border-radius: 5px;
+  z-index: 1;
+}
+
+.card {
+  border-radius: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  -webkit-box-orient: vertical;  
+  -webkit-box-direction: normal;  
+  -ms-flex-direction: column;  
+  flex-direction: column;  
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 140px;  
+}
+
+.card h3 {
+  margin: auto;
+  z-index: 1;
+}
+
+.bg-traveling,
+.bg-enjoyment,
+.bg-culture,
+.bg-games,
+.bg-extreme,
+.bg-wellness,
+.bg-sports {  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  
+}
+
+.bg-sports {
+  background-image: url("../img/bg-sports.png");
+}
+
+.bg-wellness {
+  background-image: url("../img/bg-wellness.png");
+}
+
+.bg-extreme {
+  background-image: url("../img/bg-extreme.png");
+}
+
+.bg-games {
+  background-image: url("../img/bg-games.png");
+}
+
+.bg-culture {
+  background-image: url("../img/bg-culture.png");
+}
+
+.bg-enjoyment {
+  background-image: url("../img/bg-enjoyment.png");
+}
+
+.bg-traveling {
+  background-image: url("../img/bg-traveling.png");
+}
+
+/* Form */
+
+.form-control {
+  width: 100%;
+  border: 1px solid #666;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+  padding-bottom: 50px;
+}
+
+footer .hr {
+  border-top: 2px solid #FF4E50;
+}
+
+.footer-brand {
+  text-align: center;  
+}
+
+.footer-logo {
+  text-decoration: none;
+  color: #FF4E50;
+  text-transform: uppercase;  
+}
+
+.footer-title {
+  text-align: center;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer nav ul li {
+  margin-bottom: 15px;
+}
+
+footer nav ul li a {
+  color: #554d56;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+footer .design-logo {
+  text-align: center;
 }
 
 /* Mobile only */
