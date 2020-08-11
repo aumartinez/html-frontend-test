@@ -665,6 +665,14 @@ footer .design-logo {
     max-width: 1024px;
   }
   
+  .col-12.col-md-center {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
   .md-right .mid-card {
     float: none;
   }
