@@ -19,4 +19,4 @@ Image compression boosted the page load as seen below:
 ![screenshot](https://github.com/aumartinez/html-frontend-test/blob/master/page-speed-desktop.PNG)
 ![screenshot](https://github.com/aumartinez/html-frontend-test/blob/master/page-speed-mobile.PNG)
 
-CSS and JS were not minified, since the most demanding service is the image load, no addition improvement will result from minifying these files.
+CSS and JS were not minified, since the most demanding service is the image load, no additional improvement will result from minifying these files.
